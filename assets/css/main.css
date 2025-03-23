@@ -112,6 +112,10 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+
+.grey_text { color: #95A5A6; }
+.learn_more { color: #F39C12; font-style: italic;}
+
 /* Type */
 
 	html {
@@ -191,7 +195,7 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
-		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+		/* h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			border-bottom: solid 1px #ffffff;
 			width: -moz-max-content;
 			width: -webkit-max-content;
@@ -199,6 +203,14 @@ input, select, textarea {
 			width: max-content;
 			padding-bottom: 0.5rem;
 			margin: 0 0 2rem 0;
+		} */
+		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+			border-bottom: solid 1px #ffffff;
+			width: 100%; /* Makes the heading span the full available width */
+			padding-bottom: 0.5rem;
+			margin: 0 0 2rem 0;
+			display: block; /* Ensures proper block-level behavior */
+			word-wrap: break-word; /* Ensures long words wrap properly */
 		}
 
 	h1 {
